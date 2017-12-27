@@ -1,0 +1,18 @@
+{
+  "name": "lnd-graphql",
+  "version": "0.0.1",
+  "description": "Graphql gateway for lnd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aynik",
+  "license": "ISC",
+  "dependencies": {
+    "graphql": "^0.11.7",
+    "graphql-iso-date": "^3.3.0",
+    "graphql-subscriptions": "^0.5.5",
+    "graphql-tools": "^2.16.0",
+    "grpc": "^1.7.2"
+  }
+}
