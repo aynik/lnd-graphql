@@ -1,4 +1,4 @@
-# lnd-graphql
+# lnd-graphql [![npm version](https://badge.fury.io/js/lnd-graphql.svg)](https://badge.fury.io/js/lnd-graphql)
 
 ## Graphql gateway for lnd ⚡️
 
