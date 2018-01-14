@@ -1,12 +1,13 @@
 {
   "name": "lnd-graphql",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "Graphql gateway for lnd",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "aynik",
+  "repository": "https://github.com/aynik/lnd-graphql.git",
   "license": "ISC",
   "dependencies": {
     "graphql": "^0.11.7",

@@ -6,7 +6,7 @@ const { execute, subscribe } = require('graphql')
 const { graphqlExpress, graphiqlExpress } = require('apollo-server-express')
 const { SubscriptionServer } = require('subscriptions-transport-ws')
 
-const { getGraphQLConfig } = require('../../')
+const { getGraphQLExecutableSchema } = require('../../')
 
 const PORT = process.env.PORT || 3000
 
@@ -14,7 +14,7 @@ const app = express()
 
 const server = createServer(app)
 
-getGraphQLConfig().then((config) => {
+getGraphQLExecutableSchema().then((config) => {
   app.use('/graphql', bodyParser.json(), graphqlExpress(config))
   app.get('/graphiql', graphiqlExpress((req) => ({
     endpointURL: '/graphql',

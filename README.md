@@ -27,8 +27,8 @@ getGraphQLConfig({
                     //          win32 -> %HOMEPATH%\AppData\Local\Lnd\admin.macaroon
 
   lndAddress        // Default: localhost:10009  
-}).then((config) => {
-  // use config somewhere
+}).then(({ typeDefs, resolvers }) => {
+  // use typeDefs and resolvers somewhere
 })
 ```
 
@@ -36,7 +36,8 @@ getGraphQLConfig({
 
 ### Examples
 
-- [Using `apollo-server-express`](https://github.com/aynik/lnd-graphql/tree/master/examples/express-graphql)
+- [Using `apollo-server-express`](https://github.com/aynik/lnd-graphql/tree/master/examples/apollo-server-express)
+- [Using `graphql-yoga`](https://github.com/aynik/lnd-graphql/tree/master/examples/graphql-yoga)
 
 ---
 
