@@ -21,18 +21,18 @@ getGraphQLExecutableSchema().then((config) => {
     subscriptionsEndpoint: url.format({
       host: req.get('host'),
       protocol: req.protocol === 'https' ? 'wss' : 'ws',
-      pathname: '/subscriptions'
+      pathname: '/graphql'
     })
   })))
 
   const { schema } = config
   const subscriptions = new SubscriptionServer(
     { schema, execute, subscribe },
-    { server, path: '/subscriptions' })
+    { server, path: '/graphql' })
 
   server.listen(PORT, () => {
     console.log(`graphql: http://localhost:${PORT}/graphql`)
+    console.log(`subscriptions: ws://localhost:${PORT}/graphql`)
     console.log(`graphiql: http://localhost:${PORT}/graphiql`)
-    console.log(`subscriptions: http://localhost:${PORT}/subscriptions`)
   })
 }).catch((err) => console.log(err))
