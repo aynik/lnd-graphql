@@ -1,6 +1,6 @@
 {
   "name": "lnd-graphql",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "Graphql gateway for lnd",
   "main": "index.js",
   "scripts": {
