@@ -1,6 +1,6 @@
 {
   "name": "lnd-graphql",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "Graphql gateway for lnd",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,11 @@
   "repository": "https://github.com/aynik/lnd-graphql.git",
   "license": "ISC",
   "dependencies": {
-    "graphql": "^0.11.7",
-    "graphql-iso-date": "^3.3.0",
-    "graphql-subscriptions": "^0.5.5",
-    "graphql-tools": "^2.16.0",
-    "grpc": "^1.7.2"
+    "@grpc/proto-loader": "^0.4.0",
+    "graphql": "^14.1.1",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-subscriptions": "^1.0.0",
+    "graphql-tools": "^4.0.4",
+    "grpc": "^1.18.0"
   }
 }
